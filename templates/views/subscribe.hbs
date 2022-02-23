@@ -1,0 +1,133 @@
+<html> 
+<head>
+<title>FOOD ORDER FORM</title>
+<link rel="stylesheet" type="text/css" href="../css/home.css">
+<script src="../js/subscribe.js">  </script> </head>
+<body >  
+    <div> 
+    <h2>=====Monthly Subscription Price List=====</h2> 
+    <table width="40%" id="alignment" > 
+        <tr>  
+        <th>Food Item</th> 
+        <th></th>
+        <th>Price(Rs.)</th>
+        </tr> <tr>
+        <td>Paratha/Puri</td> 
+        <td> - </td>
+        <td>700.00</td> 
+        </tr> <tr>
+        <td>Kashmiri paneer</td>
+        <td> - </td> 
+        <td>1000.00</td> 
+        </tr><tr> 
+        <td>Dum Aloo Lakhnavi</td>
+        <td> - </td>  
+        <td>800.00</td>
+        </tr> <tr>  
+        <td>Gujiya</td>
+        <td> - </td> 
+        <td>500.00</td> 
+        </tr><tr>
+        <td>Water Bottle</td>
+        <td> - </td> 
+        <td>70.00</td>
+        </tr>
+        </table>
+        <h>FIT Food - Order Form</h1>
+            <table style="background-color:aquamarine;margin-left: 100px;">  <tr>
+            <td>subscribe vendor : </td>
+            <td> 
+            <select> 
+            <option>--Select providers--</option>
+            <option>Mayuresh Tiffin Services</option>
+            <option>Savitri Homemade Food Services</option> 
+            <option>Home Food</option>
+            <option>Aao Ghr ka khana khao</option>
+            <option>Testiffin</option>
+            <option>Psm Tiffin Services</option>
+            <option>A One Tiffin Service</option>
+            <option>Twisted Tiffins</option>
+            <option>Mothers Kitchen</option>
+            </select>
+            </td> 
+            </tr>
+            <tr>
+            <td>Username:</td>
+            <td>
+            <input type="text" >
+            </td>
+            </tr>
+            <tr><td>Mobile: </td>
+            <td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+            </table>
+            <br>
+            <form name="tblform" >
+                <table width="80%"  id="alignment" >
+                <tr>
+                <th>Food Item</th>
+                <th> </th>
+                <th>Quantity</th>
+                <th>Price</th> 
+                </tr><tr> 
+                <td>Breakfast:</td> 
+                <td>
+                <select id="Breakfast">
+                <option value="1">--Select Item--</option> 
+                <option value="Idli/Dosa">Idli/Dosa</option> 
+                <option value="Paratha/Puri">Paratha/Puri</option> 
+                <option value="Milk Shake">Milk Shake</option> 
+                <option value="Alu parathe">Alu parathe</option> 
+                <option value="Pav Bhaji">Pav Bhaji</option> 
+                </select>
+                </td> 
+                <td><input type="number" value="0" id="q1"></td>
+                <td><input type="text" id="p1"></td>
+                </tr>   <tr>
+                <td>Lunch:</td>
+                <td>
+                <select id="Lunch"> 
+                <option value="1">--Select Item--</option> 
+                <option value="Kashmiri paneer">Kashmiri paneer</option> 
+                <option value="Dal Makhani">Dal Makhani</option> 
+                <option value="Matar Ke Kebab">Matar Ke Kebab</option>  
+                <option value=".Dum Aloo Lakhnavi">.Dum Aloo Lakhnavi</option>
+                <option value="Water Bottle ">Water Bottle</option>  
+                </select>
+                </td>
+                <td><input  type="number" value="0" id="q2"></td>  
+                <td><input type="text"  id="p2"></td>  
+                </tr> <tr>
+                <td>Dinner:</td>
+                <td><select id="Dinner">  
+                <option value="1">--Select Item--</option> 
+                <option value="Dal Makhani">Dal Makhani</option>   
+                <option value="Makhmali Kofte">Makhmali Kofte</option> 
+                <option value="Dum Paneer Kali Mirch">Dum Paneer Kali Mirch</option> 
+                <option value="Vegetable Kottu">Vegetable Kottu</option> 
+                <option value="Water Bottle ">Water Bottle </option> 
+                </select>
+                </td>
+                <td><input type="number" value="0" id="q3"></td>
+                <td><input type="text"  id="p3"></td> 
+                </tr> <tr>
+                <td>Sweet:</td>
+                <td><select id="Sweet">   
+                <option value="1">--Select Item--</option> 
+                <option value="Rabri">Rabri</option>   
+                <option value="Phirni">Phirni</option> 
+                <option value="Gujiya">Gujiya</option> 
+                <option value="Shrikhand"> Shrikhand</option> 
+                <option value="Water Bottle ">Water Bottle </option>   
+                </select>
+                </td>
+                <td><input type="number" value="0" id="q4"></td>
+                <td><input type="text"  id="p4"></td> 
+                </tr>    <tr>
+                <td></td> 
+                <td></td> 
+                {{!-- <td><input type="submit" class="button" value="Create Bill"></td> --}}
+                <td><input type="submit" class="button" value="Monthly Subscription Bill" onclick=createBill()></td>
+                </tr>
+                </table>
+                </form>
+</html >
